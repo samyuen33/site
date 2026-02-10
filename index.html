@@ -1,200 +1,519 @@
-<!doctype html>
+<nav class="navbar">
+  <a href="https://samyuen33.github.io/site/index.html">Home</a>
+  <a href="https://samyuen33.github.io/site/pages/about.html">About</a>
+  <a href="https://samyuen33.github.io/site/pages/experience.html">Experience</a>
+  <a href="https://samyuen33.github.io/site/pages/filmmaking.html">Videography</a>
+  <a href="https://samyuen33.github.io/site/pages/photography.html">Photography</a>
+</nav><!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam Yuen - Portfolio</title>
 
-	
-
-	
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,800&display=swap" rel="stylesheet">
 
-
-<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"> 
 <style type="text/css">
-@import url("indexcss.css");
+@charset "utf-8";
 
+body {
+	background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+	opacity: 0; 
+    transition: opacity 3s; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #005CFF;
+  color: white;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 50px;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  transition: transform 0.2s ease-out;
+}
+
+.navbar a:hover {
+  transform: translateY(-4px);
+}
+
+p.softwareskills {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+ul.softwareskills {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+
+img.software {
+	height: 150px;
+	width: 150px;
+}
+
+
+
+p.codingskills {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+img.codingskills {
+	height: 150px;
+	width: 150px;
+}
+
+ul.codingskills {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+}
+
+p.creativeskills {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+video.creativeskills {
+	height: 180px;
+	width: auto;
+	border-radius: 30px;
+	background: #f0f0f0;
+}
+
+a {
+	opacity: 1;
+	transition: .5s ease;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+.footer {
+	color: black;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 60px;
+	padding: 30px 0;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin: 60px 20px;
+	flex-wrap: wrap;
+}
+
+.box1, .box2 {
+	flex: 1;
+	min-width: 250px;
+	max-width: 350px;
+}
+
+div.nav3 {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.socialmedia {
+	padding: 15px;
+	display: inline-block;
+}
+
+img.icons {
+	height: 40px;
+	width: 40px;
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+img.icons:hover {
+	opacity: 1;
+}
+
+.indexpic {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.footer-bottom {
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	margin-top: 40px;
+}
 </style>
 </head>
 
 <body onload="document.body.style.opacity='1'">
 	
-	                                 <!-- Greeting -->
-	
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="pages/about.html">About</a>
-	<a href="pages/experience.html">Experience</a>
-  <a href="pages/filmmaking.html">Videography</a>
-  <a href="pages/photography.html">Photography</a>
-	
+
+
+<div id="banner" style="display: flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 40px; min-height: 500px; gap: 60px; position: relative; overflow: hidden;">
+  <!-- Left side text -->
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; z-index: 2;">
+    <div id="textContent" style="font-family: 'Roboto', sans-serif; color: white; text-align: center; transition: transform 0.1s ease-out;">
+      <div style="font-size: 96px; font-weight: 800; margin-bottom: 20px;">Sam Yuen</div>
+      <div style="font-size: 56px; line-height: 1.3; font-weight: 300;">
+        <div>AI Engineer</div>
+        <div>Product Manager</div>
+        <div>Data Analyst</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Right side interactive frosted glass cogs -->
+  <div style="flex: 1; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1; perspective: 1000px;">
+    <div id="cubeContainer" style="position: relative; width: 800px; height: 800px;">
+      <!-- Cog 1 (large, left) -->
+      <svg id="cube1" style="position: absolute; left: 80px; top: 160px; width: 360px; height: 360px; transition: transform 0.1s ease-out; transform-style: preserve-3d; transform-origin: center;" viewBox="0 0 200 200">
+        <defs>
+          <filter id="cogGlass1">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
+          </filter>
+        </defs>
+        <g opacity="0.25" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="95" fill="white" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+          <g id="teeth1">
+            <rect x="95" y="8" width="10" height="20" fill="white"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(30 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(60 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(90 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(120 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(150 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(180 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(210 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(240 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(270 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(300 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(330 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+        </g>
+        <g opacity="0.3" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        </g>
+      </svg>
+      
+      <!-- Cog 0.5 (between cog 1 and 2, bottom) -->
+      <svg id="cube0_5" style="position: absolute; left: 280px; top: 490px; width: 320px; height: 320px; transition: transform 0.1s ease-out; transform-style: preserve-3d; transform-origin: center;" viewBox="0 0 200 200">
+        <g opacity="0.24" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="95" fill="white" stroke="rgba(255,255,255,0.28)" stroke-width="2"/>
+          <g id="teeth0_5">
+            <rect x="95" y="8" width="10" height="20" fill="white"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(30 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(60 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(90 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(120 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(150 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(180 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(210 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(240 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(270 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(300 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(330 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.28)" stroke-width="2"/>
+        </g>
+      </svg>
+      
+      <!-- Cog 1.5 (medium, between 1 and 2) -->
+      <svg id="cube1_5" style="position: absolute; left: 280px; top: 220px; width: 180px; height: 180px; transition: transform 0.1s ease-out; transform-style: preserve-3d; transform-origin: center;" viewBox="0 0 200 200">
+        <g opacity="0.26" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="95" fill="white" stroke="rgba(255,255,255,0.32)" stroke-width="2"/>
+          <g id="teeth1_5">
+            <rect x="95" y="8" width="10" height="20" fill="white"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(30 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(60 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(90 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(120 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(150 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(180 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(210 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(240 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(270 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(300 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(330 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.32)" stroke-width="2"/>
+        </g>
+      </svg>
+      
+      <!-- Cog 2 (large, center-right) -->
+      <svg id="cube2" style="position: absolute; left: 480px; top: 120px; width: 390px; height: 390px; transition: transform 0.1s ease-out; transform-style: preserve-3d; transform-origin: center;" viewBox="0 0 200 200">
+        <g opacity="0.22" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="95" fill="white" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+          <g id="teeth2">
+            <rect x="95" y="8" width="10" height="20" fill="white"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(30 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(60 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(90 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(120 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(150 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(180 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(210 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(240 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(270 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(300 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(330 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+        </g>
+      </svg>
+      
+      <!-- Cog 3 (medium, top-right) -->
+      <svg id="cube3" style="position: absolute; right: 60px; top: 40px; width: 270px; height: 270px; transition: transform 0.1s ease-out; transform-style: preserve-3d; transform-origin: center;" viewBox="0 0 200 200">
+        <g opacity="0.28" filter="url(#cogGlass1)">
+          <circle cx="100" cy="100" r="95" fill="white" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+          <g id="teeth3">
+            <rect x="95" y="8" width="10" height="20" fill="white"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(30 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(60 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(90 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(120 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(150 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(180 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(210 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(240 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(270 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(300 100 100)"/>
+            <rect x="95" y="8" width="10" height="20" fill="white" transform="rotate(330 100 100)"/>
+          </g>
+          <circle cx="100" cy="100" r="60" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
 </div>
 
-<!--<nav class="navbar navbar-expand-sm" >
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <img class="navbar-brand" src="initialswhite.png" width="100px" height="100" alt="logo">
-                      </li>
-                  <li class="nav-item1">
-                    <a class="nav-link" href="pages/about.html"><p class="links">About</p></a>
-                  </li>
-                  <li class="nav-item1">
-                    <a class="nav-link" href="pages/links.html"><p class="links">Links</p></a>
-                  </li>
-                </ul>
-              </nav> -->
-	
-<img src="images/indexpic3.jpg" alt=""  class="indexpic" width="100%"/>
-	
-	<br>
-	<br>
-	<br>
-		                                 <!-- Software Skills -->
-	
+<script>
+const banner = document.getElementById('banner');
+const cube1 = document.getElementById('cube1');
+const cube0_5 = document.getElementById('cube0_5');
+const cube1_5 = document.getElementById('cube1_5');
+const cube2 = document.getElementById('cube2');
+const cube3 = document.getElementById('cube3');
+
+banner.addEventListener('mousemove', (e) => {
+  const rect = banner.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+  
+  const distX = (x - centerX) / centerX;
+  const distY = (y - centerY) / centerY;
+  
+  const moveX = distX * 25;
+  const moveY = distY * 25;
+  const rotateX = distY * 5;
+  const rotateY = -distX * 5;
+  
+  const scale1 = 1 + (Math.abs(distX) + Math.abs(distY)) * 0.15;
+  const scale0_5 = 1 + (Math.abs(distX) + Math.abs(distY)) * 0.14;
+  const scale1_5 = 1 + (Math.abs(distX) + Math.abs(distY)) * 0.18;
+  const scale2 = 1 + (Math.abs(distX) + Math.abs(distY)) * 0.12;
+  const scale3 = 1 + (Math.abs(distX) + Math.abs(distY)) * 0.2;
+  
+  cube1.style.transform = `translate(${moveX}px, ${moveY}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(${scale1})`;
+  cube0_5.style.transform = `translate(${moveX * 0.6}px, ${moveY * 0.6}px) rotateX(${rotateX * 0.7}deg) rotateY(${rotateY * 0.7}deg) scale(${scale0_5})`;
+  cube1_5.style.transform = `translate(${moveX * 0.75}px, ${moveY * 0.75}px) rotateX(${rotateX * 0.9}deg) rotateY(${rotateY * 0.9}deg) scale(${scale1_5})`;
+  cube2.style.transform = `translate(${moveX * 0.85}px, ${moveY * 0.85}px) rotateX(${rotateX * 0.8}deg) rotateY(${rotateY * 0.8}deg) scale(${scale2})`;
+  cube3.style.transform = `translate(${moveX * 0.65}px, ${moveY * 0.65}px) rotateX(${rotateX * 0.6}deg) rotateY(${rotateY * 0.6}deg) scale(${scale3})`;
+});
+
+banner.addEventListener('mouseleave', () => {
+  cube1.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+  cube0_5.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+  cube1_5.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+  cube2.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+  cube3.style.transform = 'translate(0, 0) rotateX(0deg) rotateY(0deg) scale(1)';
+});
+</script>
+
 <p class="softwareskills" data-aos="fade-up">Software Skills</p>
-	
+
 <div>
 <ul class="softwareskills">
+	
+<li class="software" data-aos="fade-up" data-aos-delay="0"><a href="https://powerbi.microsoft.com/en-us/"><figure><img class="software" src="images/powerbi.png" width="150" height="150" alt="Power BI"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Power BI</figcaption></figure></a></li>
+	
+<li class="software" data-aos="fade-up" data-aos-delay="100"><a href="https://www.tableau.com/"><figure><img class="software" src="images/tableau.jpg" width="150" height="150" alt="Tableau"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Tableau</figcaption></figure></a></li>
 
+<li class="software" data-aos="fade-up" data-aos-delay="200"><a href="https://www.adobe.com/products/photoshop.html"><figure><img class="software" src="images/photoshopicon.png" width="150" height="150" alt="Photoshop"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Photoshop</figcaption></figure></a></li>
 	
-<li class="software" data-aos="fade-up" data-aos-delay="0"><a href="https://powerbi.microsoft.com/en-us/"><figure><img class="software" src="images/powerbi.png" width="1050" height="1024" alt=""/><figcaption>Power BI</figcaption></figure></a></li>
+<li class="software" data-aos="fade-up" data-aos-delay="300"><a href="https://www.adobe.com/products/photoshop-lightroom-classic.html"><figure><img class="software" src="images/lightroomicon.png" width="150" height="150" alt="Lightroom"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Lightroom</figcaption></figure></a></li>
 	
-<li class="software" data-aos="fade-up" data-aos-delay="100"><a href="https://www.tableau.com/"><figure><img class="software" src="images/tableau.jpg" width="1050" height="1024" alt=""/><figcaption>Tableau</figcaption></figure></a></li>
-
-<li class="software" data-aos="fade-up" data-aos-delay="200"><a href="https://www.adobe.com/products/photoshop.html"><figure><img class="software" src="images/photoshopicon.png" width="1000" height="975" alt=""/><figcaption>Photoshop</figcaption></figure></a></li>
+<li class="software" data-aos="fade-up" data-aos-delay="400"><a href="https://www.adobe.com/products/illustrator.html"><figure><img class="software" src="images/illustratoricon.png" width="150" height="150" alt="Illustrator"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Illustrator</figcaption></figure></a></li>
 	
-<li class="software" data-aos="fade-up" data-aos-delay="300"><a href="https://www.adobe.com/products/photoshop-lightroom-classic.html"><figure><img class="software" src="images/lightroomicon.png" width="1200" height="1170" alt=""/><figcaption>Lightroom</figcaption></figure></a></li>
+<li class="software" data-aos="fade-up" data-aos-delay="500"><a href="https://www.adobe.com/products/premiere.html"><figure><img class="software" src="images/premiereproicon.png" width="150" height="150" alt="Premiere Pro"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">Premiere Pro</figcaption></figure></a></li>
 	
-<li class="software" data-aos="fade-up" data-aos-delay="400"><a href="https://www.adobe.com/products/illustrator.html"><figure><img class="software" src="images/illustratoricon.png" width="1051" height="1025" alt=""/><figcaption>Illustrator</figcaption></figure></a></li>
-	
-<li class="software" data-aos="fade-up" data-aos-delay="500"><a href="https://www.adobe.com/products/premiere.html"><figure><img class="software" src="images/premiereproicon.png" width="768" height="768" alt=""/><figcaption>Premiere Pro</figcaption></figure></a></li>
-	
-<li class="software" data-aos="fade-up" data-aos-delay="600"><a href="https://www.adobe.com/products/aftereffects.html"><figure><img class="software" src="images/aftereffectsicon.png" width="1051" height="1025" alt=""/><figcaption>After Effects</figcaption></figure></a></li>
-	
-	
-	
+<li class="software" data-aos="fade-up" data-aos-delay="600"><a href="https://www.adobe.com/products/aftereffects.html"><figure><img class="software" src="images/aftereffectsicon.png" width="150" height="150" alt="After Effects"/><figcaption style="color: white; font-family: 'Roboto', sans-serif;">After Effects</figcaption></figure></a></li>
 </ul>
-	</div>
-	
-	
-	
-		<br>
-	<br>
-	<br>
-
-<!--       Coding Skills   -->
+</div>
 
 <p class="codingskills" data-aos="fade-up">Coding Skills</p>
 
-	
 <div>
-	
 	<ul class="codingskills">
-  <li data-aos="fade-up"><a href="https://www.youtube.com/watch?v=Z1Yd7upQsXY&list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg"><figure><img class="codingskills" src="images/python.png" width="1024" height="1024" alt=""/>
-    <figcaption>Python</figcaption></figure></a></li>
+  <li data-aos="fade-up"><a href="https://www.youtube.com/watch?v=Z1Yd7upQsXY&list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg"><figure><img class="codingskills" src="images/python.png" width="150" height="150" alt="Python"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">Python</figcaption></figure></a></li>
 		
-  <li data-aos="fade-up" data-aos-delay="100"><a href="https://www.w3schools.com/sql/"><figure><img class="codingskills" src="images/sql.png" width="1024" height="1024" alt=""/>
-    <figcaption>SQL</figcaption></figure></a></li>
+  <li data-aos="fade-up" data-aos-delay="100"><a href="https://www.w3schools.com/sql/"><figure><img class="codingskills" src="images/sql.png" width="150" height="150" alt="SQL"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">SQL</figcaption></figure></a></li>
 
-  <li data-aos="fade-up" data-aos-delay="200"><a href="https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-quickstart-learn-dax-basics"><figure><img class="codingskills" src="images/dax.png" width="512" height="512" alt=""/>
-    <figcaption>DAX</figcaption></figure></a></li>		
+  <li data-aos="fade-up" data-aos-delay="200"><a href="https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-quickstart-learn-dax-basics"><figure><img class="codingskills" src="images/dax.png" width="150" height="150" alt="DAX"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">DAX</figcaption></figure></a></li>		
 		
-  <li data-aos="fade-up" data-aos-delay="300"><a href="https://www.python.org/about/gettingstarted/"><figure><img class="codingskills" src="images/html.png" width="512" height="512" alt=""/>
-    <figcaption>HTML</figcaption></figure></a></li>
+  <li data-aos="fade-up" data-aos-delay="300"><a href="https://www.python.org/about/gettingstarted/"><figure><img class="codingskills" src="images/html.png" width="150" height="150" alt="HTML"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">HTML</figcaption></figure></a></li>
 		
-  <li data-aos="fade-up" data-aos-delay="400"><a href="https://www.w3schools.com/css/"><figure><img class="codingskills" src="images/css.png" width="1297" height="1296" alt=""/>
-    <figcaption>CSS</figcaption></figure></a></li>
+  <li data-aos="fade-up" data-aos-delay="400"><a href="https://www.w3schools.com/css/"><figure><img class="codingskills" src="images/css.png" width="150" height="150" alt="CSS"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">CSS</figcaption></figure></a></li>
 		
-<li data-aos="fade-up" data-aos-delay="500"><a href="https://www.w3schools.com/js/"><figure><img class="codingskills" src="images/javascript.png" width="1297" height="1296" alt=""/>
-    <figcaption>Javascript</figcaption></figure></a></li>
+<li data-aos="fade-up" data-aos-delay="500"><a href="https://www.w3schools.com/js/"><figure><img class="codingskills" src="images/javascript.png" width="150" height="150" alt="Javascript"/>
+    <figcaption style="color: white; font-family: 'Roboto', sans-serif;">Javascript</figcaption></figure></a></li>
+	  </figure>
+</li>
 		
 </ul>
 	
 </div>
-	
-	
-		<br>
-	<br>
-	<br>
 
-<!-- Creative Skills-->
-	
 <p class="creativeskills" data-aos="fade-up">Creative Skills</p>
 
-	
 <div>
-	
 	<ul class="codingskills">
-  <li data-aos="fade-up"><a href="pages/photography.html"><figure>
-	  <video autoplay muted loop class="creativeskills">
-  		<source src="videos/photographylink.mp4" type="video/mp4">
-  	</video>
-    <figcaption>Photography</figcaption></figure></a></li>
+  <li data-aos="fade-up">
+	  <figure>
+		<div style="width: 150px; height: 150px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 30px; display: flex; align-items: center; justify-content: center;">
+			<span style="font-family: 'Lexend Deca', sans-serif; color: white; font-size: 32px; font-weight: bold;">📸</span>
+		</div>
+		<figcaption style="color: white; font-family: 'Roboto', sans-serif;">Photography</figcaption>
+	  </figure>
+  </li>
 		
-  <li data-aos="fade-up" data-aos-delay="100"><a href="pages/filmmaking.html"><figure> <video autoplay muted loop class="creativeskills">
-  		<source src="videos/filmmaking.mp4" type="video/mp4">
-  	</video>
-    <figcaption>Filmmaking</figcaption></figure></a></li>
-		
-  <!--<li data-aos="fade-up" data-aos-delay="200"><a href="pages/webdesign"><figure> <video autoplay muted loop class="creativeskills">
-  		<source src="videos/webdesignlink.mp4" type="video/mp4">
-  	</video>
-    <figcaption>Web Design</figcaption></figure></a></li> -->
-				
+  <li data-aos="fade-up" data-aos-delay="100">
+	  <figure>
+		<div style="width: 150px; height: 150px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 30px; display: flex; align-items: center; justify-content: center;">
+			<span style="font-family: 'Lexend Deca', sans-serif; color: white; font-size: 32px; font-weight: bold;">🎬</span>
+		</div>
+		<figcaption style="color: white; font-family: 'Roboto', sans-serif;">Filmmaking</figcaption>
+	  </figure>
+  </li>
 </ul>
 	
 </div>
-	
-	
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 
 <div id="container">
-	<div class="box1"><p class="footer">SAM YUEN - UCSD Kid</p>
-						<p class="footer">Just looking for cool things to do.</p>
+	<div class="box1">
+		<p class="footer" style="font-weight: bold; font-size: 18px;">SAM YUEN</p>
+		<p class="footer">UCSD • Cognitive Science Specialist</p>
+		<p class="footer">Just looking for cool things to do.</p>
 	</div>
-  <div class="box2"><p class="footer">SOCIAL MEDIA</p>
-	  				
-	  		<p class="footer">
+  <div class="box2">
+	<p class="footer" style="font-weight: bold; font-size: 18px;">SOCIAL MEDIA</p>
 	<div class="nav3">
-						
-	  <a class="socialmedia" href="https://www.linkedin.com/in/samyuen33/"><img class="icons"  src="images/linkedinblack.png" width="50" height="50" alt=""/></a>
-	  				
-	  <a class="socialmedia" href="https://www.instagram.com/s4m4r1t4n/"><img class="icons" src="images/instagramblack.png" width="50" height="50" alt=""/></a>
-	  
-	  </div>
-	  		</p>
-	
+		<a class="socialmedia" href="https://www.linkedin.com/in/samyuen33/" target="_blank">
+			<svg width="40" height="40" viewBox="0 0 24 24" fill="#0a66c2">
+				<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+			</svg>
+		</a>
+		<a class="socialmedia" href="https://www.instagram.com/samy.cr2/" target="_blank">
+			<svg width="40" height="40" viewBox="0 0 24 24" fill="#E4405F">
+				<path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.63c-.798.297-1.474.645-2.15 1.321C1.286 2.75.938 3.426.64 4.217.343 5.005.143 5.874.072 7.153.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.3.798.646 1.473 1.321 2.148.676.676 1.35 1.025 2.148 1.325.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.059 2.148-.262 2.913-.558.798-.3 1.474-.649 2.148-1.325.676-.675 1.025-1.35 1.325-2.148.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.059-1.277-.262-2.149-.558-2.913-.3-.798-.649-1.474-1.325-2.148-.675-.676-1.35-1.025-2.148-1.325-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.009 4.849.070 1.17.054 1.805.244 2.227.408.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.355 1.057.408 2.227.061 1.264.07 1.646.07 4.849s-.009 3.585-.07 4.849c-.054 1.17-.244 1.805-.408 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.355-2.227.408-1.264.061-1.646.07-4.849.07s-3.585-.009-4.849-.07c-1.17-.054-1.805-.244-2.227-.408-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.355-1.057-.408-2.227-.061-1.264-.07-1.646-.07-4.849s.009-3.585.07-4.849c.054-1.17.244-1.805.408-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.355 2.227-.408 1.264-.061 1.646-.07 4.849-.07zm0 3.678c-3.405 0-6.162 2.756-6.162 6.162 0 3.405 2.756 6.162 6.162 6.162 3.405 0 6.162-2.756 6.162-6.162 0-3.405-2.757-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm4.408-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.44-.645 1.44-1.44s-.645-1.44-1.44-1.44z"/>
+			</svg>
+		</a>
 	</div>
-	<span class="stretch"></span>
+  </div>
 </div>
-	
-	
-	
-<!--my name and major and year-->
-<div class="footer">Sam Yuen &copy; 2021 Cognitive Science Spec. Machine Learning</div>
 
-<!-- make sure you place the <scrip>AOS.init();</script> right before the 
-		ending tag for the body to get the animations to work.-->
-	<script>
-        AOS.init();
-    </script>
-<!--<div class="greeting"><p class="greeting">Hi, I'm Sam</p></div>
-	
-<div class="student"><p class="student">Student</p>
-					<p class="at">at</p>
-					<p class="student">UC San Diego</p>
+<div class="footer footer-bottom">
+	Sam Yuen © 2026 • Data Analytics Engineering • Cognitive Science
 </div>
--->
+
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
